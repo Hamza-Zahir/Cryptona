@@ -1,0 +1,75 @@
+$green-acces: #4FD3D3;
+$blue-dark:#0A164B;
+$baragraf-color:#49496F;
+
+
+
+.bg_ga{
+    background: $green-acces;
+}
+.text_ga{
+    color: $green-acces;
+}
+
+// .bg_bd{
+//     background: $green-acces;
+// }
+.text_bd{
+    color: $blue-dark;
+}
+
+.p_color{
+    color: $baragraf-color;
+}
+
+
+
+
+
+
+
+
+
+
+.menu{
+a{
+    color:$blue-dark;
+    font-size: 16px;
+    text-transform: capitalize;
+&:hover{
+    color: $green-acces;
+}
+}
+a.nuxt-link-exact-active  {
+    font-weight: 700;
+    color: $green-acces;
+  }
+}
+
+
+// ...........  global style
+body{
+    max-width:1500px ;
+    margin: 0 auto;
+}
+*{
+    box-sizing: border-box;
+
+}
+ul{
+    li{
+        list-style: none;
+    }
+}
+a{
+    text-decoration: none;
+}
+.bsl{
+    box-shadow:2px 2px 5px 0px  #0A164B ;
+}
+.bso{
+    box-shadow:0px 0px 5px 0px  #0A164B ;
+}
+.rounded-10{
+border-radius: 10px;
+}
