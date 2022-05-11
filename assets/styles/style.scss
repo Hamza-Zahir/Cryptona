@@ -1,75 +1,96 @@
-$green-acces: #4FD3D3;
-$blue-dark:#0A164B;
-$baragraf-color:#49496F;
+$green-acces: #4fd3d3;
+$blue-dark: #0a164b;
+$baragraf-color: #49496f;
 
-
-
-.bg_ga{
-    background: $green-acces;
+.bg_ga {
+  background: $green-acces;
 }
-.text_ga{
-    color: $green-acces;
+.text_ga {
+  color: $green-acces;
 }
 
 // .bg_bd{
 //     background: $green-acces;
 // }
-.text_bd{
+.text_bd {
+  color: $blue-dark;
+}
+
+.p_color {
+  color: $baragraf-color;
+}
+
+.menu {
+  a {
     color: $blue-dark;
-}
-
-.p_color{
-    color: $baragraf-color;
-}
-
-
-
-
-
-
-
-
-
-
-.menu{
-a{
-    color:$blue-dark;
     font-size: 16px;
     text-transform: capitalize;
-&:hover{
-    color: $green-acces;
-}
-}
-a.nuxt-link-exact-active  {
+    &:hover {
+      color: $green-acces;
+    }
+  }
+  a.nuxt-link-exact-active {
     font-weight: 700;
     color: $green-acces;
   }
 }
 
-
 // ...........  global style
-body{
-    max-width:1500px ;
-    margin: 0 auto;
+body {
+  max-width: 1500px;
+  margin: 0 auto;
+  background: #f5f5ff;
 }
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+}
 
-}
-ul{
-    li{
-        list-style: none;
+.body-content {
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 20%;
+      height: 100%;
+      top: 0;
+      z-index: -8;
+      opacity: 0.3;
+      
+
     }
+    &::before {
+      left: 0;
+      background: url("../imges/bg-point-left.png");
+      background-repeat: repeat ;
+      background-size: 100%;
+    }
+    &::after {
+        right: 0;
+        background: url("../imges/bg-point-right.png");
+        background-repeat: repeat ;
+        background-size: 100%;
+    }
+  }
+
+
+ul {
+  li {
+    list-style: none;
+  }
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-.bsl{
-    box-shadow:2px 2px 5px 0px  #0A164B ;
+.bsl {
+  box-shadow: 2px 2px 5px 0px #0a164b;
 }
-.bso{
-    box-shadow:0px 0px 5px 0px  #0A164B ;
+.bso {
+  box-shadow: 0px 0px 5px 0px #0a164b;
 }
-.rounded-10{
-border-radius: 10px;
+.rounded-10 {
+  border-radius: 10px;
+}
+.cp{
+    cursor: pointer;
 }

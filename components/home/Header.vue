@@ -20,10 +20,10 @@
         </div>
 
         <ul class="m-0 p-0 text-center" @click="togle = !togle">
-          <li class="mx-3 py-2">
+          <li class="py-2 border-top">
             <nuxt-link to="/" class="d-block t-d-n">Home</nuxt-link>
           </li>
-          <li v-for="(link, i) in links" :key="`link-${i + 1}`" class="py-2">
+          <li v-for="(link, i) in links" :key="`link-${i + 1}`" class="py-2 border-top">
             <nuxt-link :to="`/#${link}`" class="d-block t-d-n">{{
               link
             }}</nuxt-link>
@@ -31,7 +31,7 @@
         </ul>
         <div class="text-center p-2" @click="togle = !togle">
           <div class="btn ms-auto bg_ga text-light bsl">
-            But Tokens
+            Buy Tokens
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@
             }}</nuxt-link>
           </li>
         </ul> 
-   <div class="btn bg_ga text-light rounded ms-3 ms-xl-5">But Tokens</div>
+   <div class="btn bg_ga text-light rounded ms-3 ms-xl-5">Buy Tokens</div>
 
       </div>  
 
@@ -78,8 +78,10 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-    background: #DCE5F8;
+    // background: #DCE5F8;
+    background-image: linear-gradient(to bottom, #DCE5F8, #e9eefa, #f5f7fc);
 // filter: blur(113px);
+// background: rgb(255, 255, 255);
     .menu_lg{
       li{
     margin-left:20px ;
@@ -98,10 +100,12 @@ export default {
     right: 0;
     top: 0;
     transition: all 0.5s;
+    z-index: 9999;
   
   ul {
     max-height: 65vh;
     overflow-y: scroll;
+    font-weight: 500;
     &::-webkit-scrollbar {
       width: 5px;
     }
