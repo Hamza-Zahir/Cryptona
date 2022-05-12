@@ -2,7 +2,7 @@
   <section id="about" class="about py-4 px-2">
     <div class="col-sm-11 col-xl-10 mx-auto">
       <div class="tetle text-center my-3">
-        <h2 class="fw-bold m-0">About us</h2>
+        <h2 class="fw-bold m-0 text_bd">About us</h2>
         <img
           src="~/assets/imges/titles-line.png"
           alt=""
@@ -20,7 +20,7 @@
           <img src="~/assets/imges/about.png" alt="" class="w-100" />
         </div>
         <div class="text-box my-3 col-md-6">
-          <h2 class="border-3 border-start border-dark ps-2">
+          <h2 class="border-3 border-start border-dark ps-2 text_bd">
             What is cryptona?
           </h2>
           <div class="p_color">

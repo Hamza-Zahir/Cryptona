@@ -5,6 +5,8 @@
 <Group />
 <About />
 <Features />
+<Product />
+<Roadmap />
 </div>
 </template>
 
@@ -14,6 +16,8 @@ import Landing from "~/components/home/sections/Landing.vue";
 import Group from "~/components/home/sections/Group.vue";
 import About from "~/components/home/sections/About.vue";
 import Features from "~/components/home/sections/Features.vue";
+import Product from "~/components/home/sections/Product.vue";
+import Roadmap from "~/components/home/sections/Roadmap.vue";
 export default {
   name: 'IndexPage',
   components: {
@@ -21,7 +25,9 @@ export default {
     Landing,
     Group,
     About,
-    Features
+    Features,
+    Product,
+    Roadmap
   }
 }
 </script>

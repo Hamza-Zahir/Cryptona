@@ -1,6 +1,6 @@
 <template>
-  <div class="header p-2">
-    <div class="col-sm-11 col-xl-10 mx-auto  d-flex justify-content-between align-items-center">
+  <div class="header p-2 py-3">
+    <div class="col-sm-11 col-xl-10 px-xxl-5 mx-auto  d-flex justify-content-between align-items-center">
       <div class="logo col-5 col-sm-4 col-md-3 col-lg-2">
         <img src="~/assets/imges/logo.png" alt="" />
       </div>
@@ -78,10 +78,8 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-    // background: #DCE5F8;
-    background-image: linear-gradient(to bottom, #DCE5F8, #e9eefa, #f5f7fc);
-// filter: blur(113px);
-// background: rgb(255, 255, 255);
+z-index: 999; 
+   background-image: linear-gradient(to bottom, #DCE5F8, #e9eefa, #f5f7fc);
     .menu_lg{
       li{
     margin-left:20px ;
@@ -121,13 +119,3 @@ export default {
   }
 }
 </style>
-/* Rectangle 3922 */
-
-position: absolute;
-width: 1920px;
-height: 92.07px;
-left: -0.06px;
-top: 9.48px;
-
-background: #DCE5F8;
-filter: blur(113px);

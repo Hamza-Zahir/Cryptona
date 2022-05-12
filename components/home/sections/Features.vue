@@ -2,7 +2,7 @@
   <section id="features" class="features py-4 px-2">
     <div class="col-sm-11 col-xl-10 mx-auto">
       <div class="tetle text-center my-3">
-        <h2 class="fw-bold m-0">Benefits of Using Our Solution</h2>
+        <h2 class="fw-bold m-0 text_bd">Benefits of Using Our Solution</h2>
         <img
           src="~/assets/imges/titles-line.png"
           alt=""
@@ -29,7 +29,7 @@
           >
             BUSINESS
           </h3>
-          <div class="border-start mx-4"></div>
+          <div class="border-2 border-start mx-4"></div>
           <h3
             class="border-bottom cp"
             :class="myCoin ? 'text_ga border-dark' : ''"
@@ -114,6 +114,7 @@ export default {
     }
     img {
       width: 170px;
+      max-height: 170px;
     }
 
     p {
