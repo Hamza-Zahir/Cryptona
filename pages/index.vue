@@ -7,6 +7,8 @@
 <Features />
 <Product />
 <Roadmap />
+<Team />
+<Token />
 </div>
 </template>
 
@@ -18,6 +20,8 @@ import About from "~/components/home/sections/About.vue";
 import Features from "~/components/home/sections/Features.vue";
 import Product from "~/components/home/sections/Product.vue";
 import Roadmap from "~/components/home/sections/Roadmap.vue";
+import Team from "~/components/home/sections/Team.vue";
+import Token from "~/components/home/sections/Token.vue";
 export default {
   name: 'IndexPage',
   components: {
@@ -27,7 +31,9 @@ export default {
     About,
     Features,
     Product,
-    Roadmap
+    Roadmap,
+    Team,
+    Token
   }
 }
 </script>
