@@ -9,6 +9,8 @@
 <Roadmap />
 <Team />
 <Token />
+<BestPrices />
+<Trading />
 </div>
 </template>
 
@@ -22,6 +24,8 @@ import Product from "~/components/home/sections/Product.vue";
 import Roadmap from "~/components/home/sections/Roadmap.vue";
 import Team from "~/components/home/sections/Team.vue";
 import Token from "~/components/home/sections/Token.vue";
+import BestPrices from "~/components/home/sections/BestPrices.vue";
+import Trading from "~/components/home/sections/Trading.vue";
 export default {
   name: 'IndexPage',
   components: {
@@ -33,7 +37,9 @@ export default {
     Product,
     Roadmap,
     Team,
-    Token
+    Token,
+    BestPrices,
+    Trading
   }
 }
 </script>

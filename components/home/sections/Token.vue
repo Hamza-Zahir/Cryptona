@@ -21,14 +21,16 @@
               class="d-sm-flex flex-row-reverse justify-content-around align-items-center"
             >
               <div class="img text-center mx-auto ms-lg-3">
-                <img src="~/assets/imges/token-cercl.png" alt="" />
+                <gradientCard :Tokens="TokenAllocation" :colores="colores" />
               </div>
               <ul class="text_bd py-3 mx-auto">
-                <li class="item-1">Advisory board : 20%</li>
-                <li class="item-2">Development: 13%</li>
-                <li class="item-3">Bounties: 16%</li>
-                <li class="item-4">Reserve: 15%</li>
-                <li class="item-5">Token Sale: 21%</li>
+                <li
+                  v-for="(pecent, i) in TokenAllocation"
+                  :key="`item-${pecent.id}`"
+                >
+                  {{ pecent.name }} : {{ pecent.percentage }}%
+                  <span :style="`background:${colores[i]}`"></span>
+                </li>
               </ul>
             </div>
           </div>
@@ -38,14 +40,16 @@
               class="d-sm-flex flex-lg-row-reverse justify-content-around align-items-center"
             >
               <div class="img text-center mx-auto ms-lg-3">
-                <img src="~/assets/imges/token-cercl.png" alt="" />
+                <gradientCard :Tokens="FundsAllocation" :colores="colores" />
               </div>
-              <ul class="text_bd py-3 mx-auto ">
-                <li class="item-1">IT Development : 20%</li>
-                <li class="item-2">Sales & Marketing : 13%</li>
-                <li class="item-3">Accession : 16%</li>
-                <li class="item-4">Admin & Partners : 15%</li>
-                <li class="item-5">Bounty Program : 21%</li>
+              <ul class="text_bd py-3 mx-auto">
+                <li
+                  v-for="(pecent, i) in FundsAllocation"
+                  :key="`item-${pecent.id}`"
+                >
+                  {{ pecent.name }} : {{ pecent.percentage }}%
+                  <span :style="`background:${colores[i]}`"></span>
+                </li>
               </ul>
             </div>
           </div>
@@ -55,62 +59,94 @@
   </section>
 </template>
 <script>
+import gradientCard from "../../gradient.vue";
+const TokenAllocation = [
+  {
+    id: 1,
+    percentage: 23,
+    name: "Advisory board",
+  },
+  {
+    id: 2,
+    percentage: 16,
+    name: "Development",
+  },
+  {
+    id: 3,
+    percentage: 19,
+    name: "Bounties",
+  },
+  {
+    id: 4,
+    percentage: 18,
+    name: "Bounties",
+  },
+  {
+    id: 5,
+    percentage: 24,
+    name: "Token Sale",
+  },
+];
+const FundsAllocation = [
+  {
+    id: 1,
+    percentage: 23,
+    name: "IT Development",
+  },
+  {
+    id: 2,
+    percentage: 16,
+    name: "Sales & Marketing",
+  },
+  {
+    id: 3,
+    percentage: 19,
+    name: "Accession ",
+  },
+  {
+    id: 4,
+    percentage: 21,
+    name: "Admin & Partners",
+  },
+  {
+    id: 5,
+    percentage: 21,
+    name: "Bounty Program",
+  },
+];
+const colores = ["#ffb32c", "#b344eb", "#3d88fb", "#ff9b5c", "#fc3352"];
 export default {
+  components: {
+    gradientCard,
+  },
   data() {
-    return {};
+    return { TokenAllocation, FundsAllocation, colores };
   },
 };
 </script>
 <style lang="scss" scoped>
 .token {
   background: url("~/assets/imges/token-bg.png");
-  // background-size: cover;
-  .img {
-    img {
-      max-width: 100%;
-      margin: 0 auto;
-      width: 200px;
-    }
+  @media (min-width: 768px) {
+    background-size: cover;
   }
+
   ul {
     font-weight: 500;
     width: fit-content;
+
     li {
       position: relative;
       display: flex;
       align-items: center;
-      &::before {
-        content: "";
+      padding: 5px 0;
+
+      span {
         width: 12px;
         height: 12px;
         border-radius: 50%;
         position: absolute;
         left: -16px;
-      }
-    }
-    .item-1 {
-      &::before {
-        background: #ffb32c;
-      }
-    }
-    .item-2 {
-      &::before {
-        background: #b344eb;
-      }
-    }
-    .item-3 {
-      &::before {
-        background: #3d88fb;
-      }
-    }
-    .item-4 {
-      &::before {
-        background: #ff9b5c;
-      }
-    }
-    .item-5 {
-      &::before {
-        background: #fc3352;
       }
     }
   }

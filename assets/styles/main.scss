@@ -1,7 +1,19 @@
 $green-acces: #4fd3d3;
 $blue-dark: #0a164b;
 $baragraf-color: #49496f;
+$blueviolet-color: #9683DE;
+$turquoise-color: #4FD3D3;
 
+
+.bg_tr{
+  background: $turquoise-color;
+}
+.text_bv{
+  color: $blueviolet-color;
+}
+.border_bv{
+  border: 1px solid $blueviolet-color;
+}
 .bg_ga {
   background: $green-acces;
 }
@@ -9,9 +21,9 @@ $baragraf-color: #49496f;
   color: $green-acces;
 }
 
-// .bg_bd{
-//     background: $green-acces;
-// }
+.bg_bd{
+    background: $blue-dark;
+}
 .text_bd {
   color: $blue-dark !important;
 }
@@ -93,4 +105,10 @@ a {
 }
 .cp{
     cursor: pointer;
+}
+.fw-500{
+  font-weight: 500;
+}
+.h-100{
+  height: 100%;
 }
