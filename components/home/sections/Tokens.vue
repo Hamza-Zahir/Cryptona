@@ -1,5 +1,5 @@
 <template>
-  <section id="token" class="token py-4 px-2">
+  <section id="tokens" class="tokens py-4 px-2">
     <div class="col-sm-11 col-xl-10 mx-auto pt-4 mt-4">
       <div class="tetle text-center my-3">
         <h2 class="fw-bold m-0 text_bd">Token Distribution</h2>
@@ -59,7 +59,7 @@
   </section>
 </template>
 <script>
-import gradientCard from "../../gradient.vue";
+import gradientCard from "../../gradientCircle.vue";
 const TokenAllocation = [
   {
     id: 1,
@@ -125,7 +125,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.token {
+.tokens {
   background: url("~/assets/imges/token-bg.png");
   @media (min-width: 768px) {
     background-size: cover;

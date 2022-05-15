@@ -194,14 +194,16 @@ export default {
     .box {
       height: 100%;
       border: 1px solid #9683de;
-      box-shadow: 0px 0px 5px 0px rgb(148, 147, 147);
+      transition: all 0.5s;
 
       img {
         height: 90px;
       }
 
       &:hover {
-        background: #ffffff;
+     background: #ffffff;
+      box-shadow: 1px 1px 8px 0px #999898;
+      transform: translateY(-10px);
       }
     }
   }

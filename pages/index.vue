@@ -8,9 +8,11 @@
 <Product />
 <Roadmap />
 <Team />
-<Token />
+<Tokens />
 <BestPrices />
 <Trading />
+<LatestBlog />
+<Contact />
 </div>
 </template>
 
@@ -23,9 +25,11 @@ import Features from "~/components/home/sections/Features.vue";
 import Product from "~/components/home/sections/Product.vue";
 import Roadmap from "~/components/home/sections/Roadmap.vue";
 import Team from "~/components/home/sections/Team.vue";
-import Token from "~/components/home/sections/Token.vue";
+import Tokens from "~/components/home/sections/Tokens.vue";
 import BestPrices from "~/components/home/sections/BestPrices.vue";
 import Trading from "~/components/home/sections/Trading.vue";
+import LatestBlog from "~/components/home/sections/LatestBlog.vue";
+import Contact from "~/components/home/sections/Contact.vue";
 export default {
   name: 'IndexPage',
   components: {
@@ -37,9 +41,11 @@ export default {
     Product,
     Roadmap,
     Team,
-    Token,
+    Tokens,
     BestPrices,
-    Trading
+    Trading,
+    LatestBlog,
+    Contact
   }
 }
 </script>

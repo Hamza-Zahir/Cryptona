@@ -50,8 +50,8 @@
           :key="`team-${person.id}`"
           class="col-11 col-sm-6 col-md-4 col-lg-3 p-2 p-xl-3"
         >
-          <div class="box text-center cp rounded-10 ">
-            <div class="img d-flex justify-content-between ">
+          <div class="box text-center cp rounded-10">
+            <div class="img d-flex justify-content-between">
               <img :src="person.img" alt="img" class="mx-auto" />
               <p class="m-0 p-2">
                 Lorem ipsum dolor sit amet consectetur adipiscing elit Leo ipsum
@@ -144,21 +144,21 @@ export default {
 </script>
 <style lang="scss" scoped>
 .team {
-  * {
-    transition: all 0.7s;
-  }
   .box {
     border: 1px solid #9683de;
     width: 100%;
     height: 100%;
+    transition: all 0.7s;
 
     .img {
       height: 200px;
       align-items: end;
+
       img {
         max-height: 100%;
         max-width: 100%;
       }
+
       p {
         display: none;
       }
@@ -166,6 +166,7 @@ export default {
 
     .footr {
       border-top: inherit;
+
       .icon {
         width: 35px;
         height: 35px;
@@ -173,6 +174,7 @@ export default {
         background: #9683de;
         box-shadow: 1px 1px 5px 0px #444444;
       }
+
       span {
         font-size: 14px;
       }
@@ -180,15 +182,20 @@ export default {
 
     &:hover {
       background: #0e096d;
+      box-shadow: 1px 1px 8px 0px #999898;
+      transform: translateY(-10px);
+
       * {
         color: white !important;
       }
+
       .img {
         align-items: center;
 
         p {
           display: block;
         }
+
         img {
           display: none;
         }

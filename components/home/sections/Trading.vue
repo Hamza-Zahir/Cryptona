@@ -14,7 +14,11 @@
         aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
       </p>
       <div class="Content col-12 mx-0 my-5">
-        <div class="tebel ">
+        <div class="text-end my-3 d-xl-none">
+          <b-icon icon="chevron-right" class="p-0 m-0 h3"></b-icon>
+        </div>
+
+        <div class="tebel py-2">
           <div class="box border_bv">
             <div class="d-flex">
               <div class="col-3">
@@ -22,7 +26,7 @@
                   class="bg_tr h-100 d-flex flex-column justify-content-around align-items-center text-center text-light py-3 px-2"
                 >
                   <h1 class=" ">$ 15,025.00</h1>
-                  <div>btc/USD</div>
+                  <div>BTC / USD</div>
                 </div>
               </div>
               <div
@@ -30,23 +34,23 @@
               >
                 <div class="text-center">
                   <span>MktCap</span>
-                  <h3 class="fw-bold">____._</h3>
+                  <h3 class="fw-bold mt-2">____._</h3>
                 </div>
                 <div class="text-center">
                   <span>HIGH</span>
-                  <h3 class="fw-bold">$ 28,025.00</h3>
+                  <h3 class="fw-bold mt-2">$ 28,025.00</h3>
                 </div>
                 <div class="text-center">
                   <span>LOW</span>
-                  <h3 class="fw-bold">$ 17,025.00</h3>
+                  <h3 class="fw-bold mt-2">$ 17,025.00</h3>
                 </div>
                 <div class="text-center">
                   <span>SUPPLY</span>
-                  <h3 class="fw-bold">____._</h3>
+                  <h3 class="fw-bold mt-2">____._</h3>
                 </div>
                 <div class="text-center">
                   <span>BLOCKS</span>
-                  <h3 class="fw-bold">____._</h3>
+                  <h3 class="fw-bold mt-2">____._</h3>
                 </div>
               </div>
             </div>
@@ -62,12 +66,17 @@
             </div>
           </div>
         </div>
+<Gradient />
       </div>
     </div>
   </section>
 </template>
 <script>
+import Gradient from "../../gradientCurve.vue"
 export default {
+  components:{
+    Gradient
+  },
   data() {
     return {};
   },
@@ -76,18 +85,14 @@ export default {
 <style lang="scss" scoped>
 .tebel {
   overflow-x: scroll;
-  
-    &::-webkit-scrollbar-thumb {
-      background: #4fd3d3;
-    }
 
-    &::-webkit-scrollbar-thumb:hover {
-      background: #4fd3d3;
-    }
+  &::-webkit-scrollbar-thumb {
+    background: #4fd3d3;
+  }
 
-    &::-webkit-scrollbar {
-      height: 2px;
-    }
+  &::-webkit-scrollbar {
+    height: 2px;
+  }
   .box {
     min-width: 1000px;
   }

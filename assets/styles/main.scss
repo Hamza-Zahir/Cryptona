@@ -8,8 +8,14 @@ $turquoise-color: #4FD3D3;
 .bg_tr{
   background: $turquoise-color;
 }
+.text_tr{
+  color: $turquoise-color;
+}
 .text_bv{
   color: $blueviolet-color;
+}
+.bg_bv{
+  background: $blueviolet-color;
 }
 .border_bv{
   border: 1px solid $blueviolet-color;
