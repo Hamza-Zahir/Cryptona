@@ -30,7 +30,7 @@
               ‘Transparent’ Via Blockchain
             </p>
           </div>
-          <b-icon icon="arrow-right" class="h1 ms-3 text_bv"></b-icon>
+          <b-icon icon="arrow-right" class="h1 ms-3 text_bv icon"></b-icon>
         </div>
 
         <div
@@ -44,7 +44,7 @@
             <div class="fs-14 p_color mx-3 mt-3">27 August, 2021</div>
             <p class="m-3">Bitcoin still consolidating above 200 SMA!</p>
           </div>
-          <b-icon icon="arrow-right" class="h1 ms-3 text_bv"></b-icon>
+          <b-icon icon="arrow-right" class="h1 ms-3 text_bv icon"></b-icon>
         </div>
         <div
           class="box m-2 cp border_bv rounded-10 d-flex flex-column justify-content-between move-to-top"

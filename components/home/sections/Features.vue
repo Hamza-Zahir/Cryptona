@@ -3,43 +3,31 @@
     <div class="col-sm-11 col-xl-10 mx-auto">
       <div class="tetle text-center my-3 move-to-bottom">
         <h2 class="fw-bold m-0 text_bd">Benefits of Using Our Solution</h2>
-        <img
-          src="~/assets/imges/titles-line.png"
-          alt=""
-          style="maxwidth: 200px"
-        />
+        <img src="~/assets/imges/titles-line.png" alt="" style="maxwidth: 200px" />
       </div>
-      <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto move-to-left">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum
-        aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
-      </p>
-      <div
-        class="content my-5 d-flex flex-column flex-md-row-reverse align-items-center justify-content-center"
-      >
+      <div class="">
+        <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto move-to-left">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum
+          aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
+        </p>
+      </div>
+      <div class="content my-5 d-flex flex-column flex-md-row-reverse align-items-center justify-content-center">
         <div class="text_bd d-flex">
-          <h3
-            class="border-bottom cp move-to-left"
-            :class="business ? 'text_ga border-dark' : ''"
-            @click="
-              () => {
-                myCoin = false;
-                business = true;
-              }
-            "
-          >
+          <h3 :class="business ? 'text_ga border-dark' : ''" class="border-bottom cp" @click="
+            () => {
+              myCoin = false;
+              business = true;
+            }
+          ">
             BUSINESS
           </h3>
           <div class="border-2 border-start mx-4"></div>
-          <h3
-            class="border-bottom cp move-to-right"
-            :class="myCoin ? 'text_ga border-dark' : ''"
-            @click="
-              () => {
-                myCoin = true;
-                business = false;
-              }
-            "
-          >
+          <h3 :class="myCoin ? 'text_ga border-dark' : ''" class="border-bottom cp" @click="
+            () => {
+              myCoin = true;
+              business = false;
+            }
+          ">
             MY COIN
           </h3>
         </div>
@@ -109,9 +97,11 @@ export default {
     overflow: hidden;
     border: 1px solid #9683de;
     height: 270px;
+
     @media (min-width: 1200px) {
       width: 250px;
     }
+
     img {
       width: 170px;
       max-height: 170px;
@@ -138,6 +128,7 @@ export default {
         position: relative;
         height: fit-content;
       }
+
       h5 {
         color: #f5f5ff;
       }

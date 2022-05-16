@@ -9,13 +9,16 @@
           style="maxwidth: 200px"
         />
       </div>
-      <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto move-to-left">
+      <div class="">
+        <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto move-to-left">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum
         aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
       </p>
+      </div>
+
       <div class="text_bd d-flex justify-content-center mt-4">
         <h3
-          class="border-bottom cp move-to-left"
+          class="border-bottom cp"
           :class="one ? 'text_ga border-dark' : ''"
           @click="
             () => {
@@ -29,7 +32,7 @@
         </h3>
         <div class="border-2 border-start mx-4"></div>
         <h3
-          class="border-bottom cp move-to-bottom"
+          class="border-bottom cp"
           :class="tow ? 'text_ga border-dark' : ''"
           @click="
             () => {
@@ -43,7 +46,7 @@
         </h3>
         <div class="border-2 border-start mx-4"></div>
         <h3
-          class="border-bottom cp move-to-right"
+          class="border-bottom cp"
           :class="three ? 'text_ga border-dark' : ''"
           @click="
             () => {

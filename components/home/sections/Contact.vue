@@ -9,13 +9,16 @@
           style="maxwidth: 200px"
         />
       </div>
-      <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto move-to-left">
+      <div class="">
+        <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto move-to-left">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum
         aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
       </p>
+      </div>
+
 
       <div class="content d-lg-flex flex-row-reverse align-items-center my-5">
-        <div class="messag border_bv p-2 p-lg-4 col-lg-7 col-xxl-8 move-to-right">
+        <div class="messag border_bv p-2 p-lg-4 col-lg-7 col-xxl-8 ">
           <h2 class="text-center my-3 text_bd">Leave Us a Message</h2>
           <div class="form text_bd">
             <form action="" class="w-100">
@@ -112,10 +115,10 @@
           </div>
         </div>
         <div class="contact_info p-2 col-lg-5 col-xxl-4">
-          <div class="img text-center move-to-left">
+          <div class="img text-center">
             <img src="~/assets/imges/btc-img.png" alt="" />
           </div>
-          <div class="tetle text-center my-3 move-to-right">
+          <div class="tetle text-center my-3">
             <h2 class="fw-bold m-0 text_bd">Contact Info</h2>
             <img
               src="~/assets/imges/titles-line.png"
@@ -123,7 +126,8 @@
               style="maxwidth: 200px"
             />
           </div>
-          <ul class="m-0 p-0 text-center fw-500 move-to-top">
+
+            <ul class="m-0 p-0 text-center fw-500">
             <li class="my-2">
               <b-icon
                 icon="telephone"
@@ -142,10 +146,12 @@
               ><a href="" class="text_bd">A88 Whitby Road London, UK </a>
             </li>
           </ul>
+
+
           <div
             class="social text-center mt-3 d-sm-flex justify-content-center justify-content-lg-berween align-items-center"
           >
-            <div class="text_bd fw-500 my-3 me-sm-3 me-lg-1 move-to-bottom">
+            <div class="text_bd fw-500 my-3 me-sm-3 me-lg-1">
               SOCIAL NETWORK
             </div>
             <div class="border col-1 d-none d-sm-block col-xl-2"></div>
@@ -167,7 +173,7 @@
               </a>
             </div>
           </div>
-          <div class="text-center my-2 move-to-left">
+          <div class="text-center my-2">
             <div class="btn bg_ga text-light px-3 py-2 m-3">
               <b-icon icon="geo-alt" class="h5 m-0"></b-icon>
               <span class="h5">View Map</span>
@@ -215,7 +221,7 @@ export default {
         position: absolute;
         top: calc(100% - 1px);
         left: -1px;
-        background: #f5f5ff;
+        background: #dffff6;
         overflow-y: scroll;
 
         &::-webkit-scrollbar {

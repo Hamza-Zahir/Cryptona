@@ -1,5 +1,5 @@
 <template>
-  <section id="bestBrices" class="bestBrices py-4 mb-4 px-2">
+  <section id="bestBrices" class="bestBrices py-4 mb-4 px-2 ">
     <div class="col-sm-11 col-xl-10 mx-auto">
       <div class="tetle text-center my-3 move-to-bottom">
         <h2 class="fw-bold m-0 text_bd">Find the Best Cryptocurrency Prices</h2>
@@ -9,16 +9,18 @@
           style="maxwidth: 200px"
         />
       </div>
+      <div class="">
       <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto move-to-right">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum
         aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
       </p>
+      </div>
       <div
         class="content my-5 d-flex flex-column flex-md-row-reverse align-items-center justify-content-center"
       >
         <div class="text_bd d-sm-flex">
           <h3
-            class="border-bottom cp pb-2 move-to-left"
+            class="border-bottom cp pb-2"
             :class="buying ? 'text_ga border-dark' : ''"
             @click="
               () => {
@@ -31,7 +33,7 @@
           </h3>
           <div class="border-2 border-start mx-4"></div>
           <h3
-            class="border-bottom cp pb-2 move-to-right"
+            class="border-bottom cp pb-2"
             :class="selling ? 'text_ga border-dark' : ''"
             @click="
               () => {
@@ -44,7 +46,7 @@
           </h3>
         </div>
       </div>
-      <div class="box-change rounded-10 p-2 d-lg-flex move-to-bottom">
+      <div class="box-change rounded-10 p-2 d-lg-flex">
         <div class="d-sm-flex align-items-center gap-3 col">
           <ul
             class="cryptos p-0 py-2 mb-3 m-sm-0 d-flex col-sm-7 col-md-7 col-lg-7 col-xl"
@@ -86,7 +88,7 @@
           <div class="btn bg_ga text-light bsl px-4">CONVERT</div>
         </div>
       </div>
-      <h1 class="text-center my-4 p-2 text_ga move-to-right">
+      <h1 class="text-center my-4 p-2 text_ga">
         {{ inputValue }} {{ currentCrypto }} = {{ changValue }}
         {{ currentCurrency }}
       </h1>
@@ -98,7 +100,7 @@
         >
           <div
             class="box text-center py-3 px-2 cp rounded-10 d-flex flex-column justify-content-between align-items-center"
-            :class="bP.id % 2 == 0 ? 'move-to-top' :'move-to-bottom'"
+
           >
             <span><img :src="bP.img" alt="" class="" /></span>
 

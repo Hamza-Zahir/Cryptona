@@ -26,7 +26,7 @@
         </div>
         <div class="col-lg-8 d-sm-flex justify-content-around text-center">
           <div class="col d-flex justify-content-between mt-2">
-            <div class="col move-to-bottom">
+            <div class="col">
               <span class="fw-bold border-bottom p-2 text_bd">About</span>
               <ul class="m-0 mt-3 p-0">
                 <li class="my-1 fw-500">
@@ -41,7 +41,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col move-to-top">
+            <div class="col">
               <span class="fw-bold border-bottom p-2 text_bd">Company</span>
               <ul class="m-0 mt-3 p-0">
                 <li class="my-1 fw-500">
@@ -57,7 +57,7 @@
             </div>
           </div>
           <div class="d-flex col justify-content-between mt-2">
-            <div class="col move-to-bottom">
+            <div class="col">
               <span class="fw-bold border-bottom p-2 text_bd">Support</span>
               <ul class="m-0 mt-3 p-0">
                 <li class="my-1 fw-500">
@@ -74,7 +74,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col move-to-top">
+            <div class="col">
               <span class="fw-bold border-bottom p-2 text_bd">Resources</span>
               <ul class="m-0 mt-3 p-0">
                 <li class="my-1 fw-500"><a href="" class="p_color">Help</a></li>
