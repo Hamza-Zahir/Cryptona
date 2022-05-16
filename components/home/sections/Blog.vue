@@ -1,7 +1,7 @@
 <template>
   <section id="blog" class="blog py-5 px-2">
     <div class="col-sm-11 col-xl-10 mx-auto">
-      <div class="tetle text-center my-3">
+      <div class="tetle text-center my-3 move-to-bottom">
         <h2 class="fw-bold m-0 text_bd">Latest Blog Posts on Cryptocurrency</h2>
         <img
           src="~/assets/imges/titles-line.png"
@@ -9,7 +9,7 @@
           style="maxwidth: 200px"
         />
       </div>
-      <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto">
+      <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto move-to-left">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum
         aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
       </p>
@@ -18,7 +18,7 @@
         class="boxses d-flex mt-5 py-3 flex-wrap justify-content-center justify-content-lg-around"
       >
         <div
-          class="box border_bv m-2 cp rounded-10 rounded-10 d-flex flex-column justify-content-between"
+          class="box border_bv m-2 cp rounded-10 rounded-10 d-flex flex-column justify-content-between move-to-top"
         >
           <div class="img">
             <img src="~/assets/imges/blog/blog-1.png" alt="" />
@@ -34,7 +34,7 @@
         </div>
 
         <div
-          class="box m-2 cp border_bv rounded-10 d-flex flex-column justify-content-between"
+          class="box m-2 cp border_bv rounded-10 d-flex flex-column justify-content-between move-to-bottom"
         >
           <div class="body d-flex flex-column justify-content-between">
             <div class="img">
@@ -47,7 +47,7 @@
           <b-icon icon="arrow-right" class="h1 ms-3 text_bv"></b-icon>
         </div>
         <div
-          class="box m-2 cp border_bv rounded-10 d-flex flex-column justify-content-between"
+          class="box m-2 cp border_bv rounded-10 d-flex flex-column justify-content-between move-to-top"
         >
           <div class="body d-flex flex-column justify-content-between">
             <div class="img">
@@ -59,7 +59,7 @@
               Come
             </p>
           </div>
-          <b-icon icon="arrow-right" class="h1 ms-3 text_bv"></b-icon>
+          <b-icon icon="arrow-right" class="h1 ms-3 text_bv icon"></b-icon>
         </div>
       </div>
     </div>
@@ -104,6 +104,10 @@ export default {
       transform: translateY(-10px);
       p {
         color: #4fd3d3;
+      }
+
+      .icon {
+        animation: drop-right 0.5s infinite linear;
       }
     }
   }

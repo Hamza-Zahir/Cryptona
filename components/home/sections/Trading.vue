@@ -1,7 +1,7 @@
 <template>
   <section id="Trading" class="Trading py-4 px-2">
     <div class="col-sm-11 col-xl-10 mx-auto">
-      <div class="tetle text-center my-3">
+      <div class="tetle text-center my-3 move-to-bottom">
         <h2 class="fw-bold m-0 text_bd">Cryptocurrency Trading Updates</h2>
         <img
           src="~/assets/imges/titles-line.png"
@@ -9,7 +9,7 @@
           style="maxwidth: 200px"
         />
       </div>
-      <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto">
+      <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto move-to-left">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum
         aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
       </p>
@@ -18,7 +18,7 @@
           <b-icon icon="chevron-right" class="p-0 m-0 h3"></b-icon>
         </div>
 
-        <div class="tebel py-2">
+        <div class="tebel py-2 move-to-bottom">
           <div class="box border_bv">
             <div class="d-flex">
               <div class="col-3">
@@ -66,7 +66,11 @@
             </div>
           </div>
         </div>
-<Gradient />
+        <div class="move-to-bottom">
+
+          <Gradient />
+
+        </div>
       </div>
     </div>
   </section>

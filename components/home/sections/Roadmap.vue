@@ -1,7 +1,7 @@
 <template>
   <section id="roadmap" class="roadmap py-4 px-2">
     <div class="col-sm-11 col-xl-10 mx-auto">
-      <div class="tetle text-center my-3">
+      <div class="tetle text-center my-3 move-to-bottom">
         <h2 class="fw-bold m-0 text_bd">Roadmap to Success</h2>
         <img
           src="~/assets/imges/titles-line.png"
@@ -9,11 +9,11 @@
           style="maxwidth: 200px"
         />
       </div>
-      <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto">
+      <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto move-to-right">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum
         aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
       </p>
-      <div class="Content col-12 mx-0 my-5">
+      <div class="Content col-12 mx-0 my-5 move-to-bottom">
         <div class="boxses">
           <div class="btn_scrol prev">
             <b-icon icon="chevron-left" class="p-0 m-0 icon icon-prev"></b-icon>

@@ -47,15 +47,11 @@ export default {
         let y = 100 - (data[i] * 100) / maxprice;
         bgCoordinatien.push(`${x}% ${y}%`);
       });
-      console.log(
-        ` clip-path:polygon(${bgCoordinatien.join(",")} , ${100}% 100% , ${
-          100 / data.length / 1
-        }% 100%);`
-      );
+
       return ` clip-path:polygon(${bgCoordinatien.join(",")} , ${100}% 100% , ${
         100 / data.length / 1
       }% 100%);`;
-
+      
     },
   },
 };
@@ -71,7 +67,7 @@ export default {
     position: relative;
 
     .gradient-bg {
-      background-color: #9683DE;
+      background-color: #9683de;
       width: 100%;
       height: 100%;
 
@@ -118,5 +114,4 @@ export default {
     width: 100%;
   }
 }
-
 </style>

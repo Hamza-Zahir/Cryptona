@@ -1,7 +1,7 @@
 <template>
   <section id="team" class="team py-4 mb-4 px-2">
     <div class="col-sm-11 col-xl-10 mx-auto">
-      <div class="tetle text-center my-3">
+      <div class="tetle text-center my-3 move-to-bottom">
         <h2 class="fw-bold m-0 text_bd">OUR EXPART TEAM MEMBER</h2>
         <img
           src="~/assets/imges/titles-line.png"
@@ -9,7 +9,7 @@
           style="maxwidth: 200px"
         />
       </div>
-      <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto">
+      <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto move-to-left">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum
         aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
       </p>
@@ -18,7 +18,7 @@
       >
         <div class="text_bd d-sm-flex">
           <h3
-            class="border-bottom cp pb-2"
+            class="border-bottom cp pb-2 move-to-left"
             :class="Operating ? 'text_ga border-dark' : ''"
             @click="
               () => {
@@ -31,7 +31,7 @@
           </h3>
           <div class="border-2 border-start mx-4"></div>
           <h3
-            class="border-bottom cp pb-2"
+            class="border-bottom cp pb-2 move-to-right"
             :class="Advisory ? 'text_ga border-dark' : ''"
             @click="
               () => {
@@ -50,7 +50,7 @@
           :key="`team-${person.id}`"
           class="col-11 col-sm-6 col-md-4 col-lg-3 p-2 p-xl-3"
         >
-          <div class="box text-center cp rounded-10">
+          <div class="box text-center cp rounded-10" :class="person.id % 2 == 0 ? 'move-to-top' :'move-to-bottom'">
             <div class="img d-flex justify-content-between">
               <img :src="person.img" alt="img" class="mx-auto" />
               <p class="m-0 p-2">
@@ -177,6 +177,13 @@ export default {
 
       span {
         font-size: 14px;
+      }
+      a {
+        transition: all 0.5s;
+        display: inline-block;
+        &:hover {
+          transform: translateY(-7px) scale(1.1);
+        }
       }
     }
 

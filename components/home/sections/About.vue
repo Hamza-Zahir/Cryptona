@@ -1,29 +1,29 @@
 <template>
   <section id="about" class="about py-4 px-2">
     <div class="col-sm-11 col-xl-10 mx-auto">
-      <div class="tetle text-center my-3">
-        <h2 class="fw-bold m-0 text_bd">About us</h2>
+      <div class="tetle text-center my-3 move-to-bottom">
+        <h2 class="fw-bold m-0 text_bd ">About us</h2>
         <img
           src="~/assets/imges/titles-line.png"
           alt=""
           style="maxwidth: 200px"
         />
       </div>
-      <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto">
+      <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto move-to-top">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum
         aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
       </p>
       <div
         class="content my-5 d-flex flex-column flex-md-row-reverse align-items-center justify-content-center"
       >
-        <div class="img-box col-md-6">
+        <div class="img-box col-md-6 move-to-right">
           <img src="~/assets/imges/about.png" alt="" class="w-100" />
         </div>
         <div class="text-box my-3 col-md-6">
-          <h2 class="border-3 border-start border-dark ps-2 text_bd">
+          <h2 class="border-3 border-start border-dark ps-2 text_bd move-to-right">
             What is cryptona?
           </h2>
-          <div class="p_color">
+          <div class="p_color move-to-left">
             cryptona is a private, decentralized cryptocurrency with
             <div class="d-none d-lg-block"></div>
             open source code that allows everyone to take part in
@@ -34,7 +34,7 @@
             <div class="d-none d-lg-block"></div>
             The best solution for...
           </div>
-          <ul class="text-bd">
+          <ul class="text-bd move-to-right">
             <li>Realtime Update</li>
             <li>Excepteur sint occaecat deleniti</li>
             <li>Corporis suscipit laboriosam cupid</li>
@@ -42,10 +42,10 @@
             <li>Pellentesque auctor nibh sit amet rhoncus</li>
             <li>Vivamus vulputate fermentum luctus nunc</li>
           </ul>
-
+         <div class="move-to-bottom">
           <div class="btn bg_ga text-light rounded px-4 py-2 ms-5 bsl">
             Rear More
-          </div>
+          </div></div>
         </div>
       </div>
     </div>

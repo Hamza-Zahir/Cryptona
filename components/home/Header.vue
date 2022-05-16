@@ -7,16 +7,16 @@
       <div class="togelMenu">
         <b-icon
           icon="list"
-          class="h2 p-0 m-0 d-lg-none"
+          class="h2 p-0 m-0 d-lg-none cp"
           @click="togle = !togle"
         ></b-icon>
       </div>
       <div
         class="menu menu_sm bso rounded d-lg-none"
-        :class="!togle ? 'move-to-right' : ''"
+        :class="!togle ? 'push-to-right' : ''"
       >
         <div class="text-end p-3">
-          <b-icon icon="x-lg" class="h4" @click="togle = !togle"></b-icon>
+          <b-icon icon="x-lg" class="h4 cp" @click="togle = !togle"></b-icon>
         </div>
 
         <ul class="m-0 p-0 text-center" @click="togle = !togle">
@@ -46,10 +46,10 @@
               link
             }}</nuxt-link>
           </li>
-        </ul> 
+        </ul>
    <div class="btn bg_ga text-light rounded ms-3 ms-xl-5">Buy Tokens</div>
 
-      </div>  
+      </div>
 
     </div>
   </div>
@@ -78,13 +78,13 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-z-index: 999; 
+z-index: 999;
    background-image: linear-gradient(to bottom, #DCE5F8, #e9eefa, #f5f7fc);
     .menu_lg{
       li{
     margin-left:20px ;
 }  }
-    
+
 
   .logo {
     img {
@@ -99,7 +99,7 @@ z-index: 999;
     top: 0;
     transition: all 0.5s;
     z-index: 9999;
-  
+
   ul {
     max-height: 65vh;
     overflow-y: scroll;
@@ -113,7 +113,7 @@ z-index: 999;
     }
   }
   }
-  .move-to-right {
+  .push-to-right {
     width: 0px !important;
     overflow: hidden;
   }

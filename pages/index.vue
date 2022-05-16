@@ -11,8 +11,9 @@
 <Tokens />
 <BestPrices />
 <Trading />
-<LatestBlog />
+<Blog />
 <Contact />
+<Footer />
 </div>
 </template>
 
@@ -28,8 +29,9 @@ import Team from "~/components/home/sections/Team.vue";
 import Tokens from "~/components/home/sections/Tokens.vue";
 import BestPrices from "~/components/home/sections/BestPrices.vue";
 import Trading from "~/components/home/sections/Trading.vue";
-import LatestBlog from "~/components/home/sections/LatestBlog.vue";
+import Blog from "~/components/home/sections/Blog.vue";
 import Contact from "~/components/home/sections/Contact.vue";
+import Footer from "~/components/home/sections/Footer.vue";
 export default {
   name: 'IndexPage',
   components: {
@@ -44,8 +46,9 @@ export default {
     Tokens,
     BestPrices,
     Trading,
-    LatestBlog,
-    Contact
+    Blog,
+    Contact,
+    Footer
   }
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <section id="features" class="features py-4 px-2">
     <div class="col-sm-11 col-xl-10 mx-auto">
-      <div class="tetle text-center my-3">
+      <div class="tetle text-center my-3 move-to-bottom">
         <h2 class="fw-bold m-0 text_bd">Benefits of Using Our Solution</h2>
         <img
           src="~/assets/imges/titles-line.png"
@@ -9,7 +9,7 @@
           style="maxwidth: 200px"
         />
       </div>
-      <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto">
+      <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto move-to-left">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum
         aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
       </p>
@@ -18,7 +18,7 @@
       >
         <div class="text_bd d-flex">
           <h3
-            class="border-bottom cp"
+            class="border-bottom cp move-to-left"
             :class="business ? 'text_ga border-dark' : ''"
             @click="
               () => {
@@ -31,7 +31,7 @@
           </h3>
           <div class="border-2 border-start mx-4"></div>
           <h3
-            class="border-bottom cp"
+            class="border-bottom cp move-to-right"
             :class="myCoin ? 'text_ga border-dark' : ''"
             @click="
               () => {
@@ -45,7 +45,7 @@
         </div>
       </div>
       <div class="boxses d-flex justify-content-center">
-        <div class="box p-3 m-2 text-center cp">
+        <div class="box p-3 m-2 text-center cp move-to-bottom">
           <img src="~/assets/imges/features/img-1.png" alt="" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit Leo ipsum
@@ -54,7 +54,7 @@
           <div class="border-top col-8 mx-auto my-3"></div>
           <h5 class="m-0 text-bd">SMART MANAGEMENT</h5>
         </div>
-        <div class="box p-3 m-2 text-center cp">
+        <div class="box p-3 m-2 text-center cp move-to-top">
           <img src="~/assets/imges/features/img-1.png" alt="" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit Leo ipsum
@@ -63,7 +63,7 @@
           <div class="border-top col-8 mx-auto my-3"></div>
           <h5 class="m-0 text-bd">Ethereum Platform</h5>
         </div>
-        <div class="box p-3 m-2 text-center cp">
+        <div class="box p-3 m-2 text-center cp move-to-bottom">
           <img src="~/assets/imges/features/img-2.png" alt="" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit Leo ipsum
@@ -72,7 +72,7 @@
           <div class="border-top col-8 mx-auto my-3"></div>
           <h5 class="m-0 text-bd">TRANSPARENCY</h5>
         </div>
-        <div class="box p-3 m-2 text-center cp">
+        <div class="box p-3 m-2 text-center cp move-to-top">
           <img src="~/assets/imges/features/img-3.png" alt="" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit Leo ipsum

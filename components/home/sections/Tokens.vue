@@ -1,7 +1,7 @@
 <template>
   <section id="tokens" class="tokens py-4 px-2">
     <div class="col-sm-11 col-xl-10 mx-auto pt-4 mt-4">
-      <div class="tetle text-center my-3">
+      <div class="tetle text-center my-3 move-to-bottom">
         <h2 class="fw-bold m-0 text_bd">Token Distribution</h2>
         <img
           src="~/assets/imges/titles-line.png"
@@ -9,21 +9,21 @@
           style="maxwidth: 200px"
         />
       </div>
-      <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto">
+      <p class="text-center p_color col-sm-8 col-md-7 col-lg-6 mx-auto move-to-right">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum
         aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
       </p>
       <div class="Content col-12 mx-0 my-5">
         <div class="boxses d-lg-flex justify-content-around align-items-center">
           <div class="box">
-            <h3 class="text-center text_bd mb-2">Token Allocation</h3>
+            <h3 class="text-center text_bd mb-2 move-to-top">Token Allocation</h3>
             <div
               class="d-sm-flex flex-row-reverse justify-content-around align-items-center"
             >
-              <div class="img text-center mx-auto ms-lg-3">
+              <div class="img text-center mx-auto ms-lg-3 move-to-right">
                 <gradientCard :Tokens="TokenAllocation" :colores="colores" />
               </div>
-              <ul class="text_bd py-3 mx-auto">
+              <ul class="text_bd py-3 mx-auto move-to-left">
                 <li
                   v-for="(pecent, i) in TokenAllocation"
                   :key="`item-${pecent.id}`"
@@ -35,14 +35,14 @@
             </div>
           </div>
           <div class="box">
-            <h3 class="text-center text_bd mb-2">Funds Allocation</h3>
+            <h3 class="text-center text_bd mb-2 move-to-top">Funds Allocation</h3>
             <div
               class="d-sm-flex flex-lg-row-reverse justify-content-around align-items-center"
             >
-              <div class="img text-center mx-auto ms-lg-3">
+              <div class="img text-center mx-auto ms-lg-3 move-to-right">
                 <gradientCard :Tokens="FundsAllocation" :colores="colores" />
               </div>
-              <ul class="text_bd py-3 mx-auto">
+              <ul class="text_bd py-3 mx-auto move-to-left">
                 <li
                   v-for="(pecent, i) in FundsAllocation"
                   :key="`item-${pecent.id}`"

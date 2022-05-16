@@ -2,49 +2,49 @@
   <div class="content">
     <div class="landing d-flex align-items-center d-md-block">
       <div class="sm-bg d-md-none"></div>
-      <div class="inf-bg col-6 d-none d-md-block">
+      <div class="inf-bg col-6 d-none d-md-block ">
         <img
           src="~/assets/imges/landing/infinit-bgLanding.png"
           alt=""
           class="w-100"
         />
       </div>
-      <div class="backgrounds d-none d-md-block col-12">
-        <div v-for="i in 12" :key="`bg-${i}`" :class="`bgr bg-${i}`">
+      <div class="backgrounds d-none d-md-block col-12 ">
+        <div v-for="i in 12" :key="`bg-${i}`" :class="`bgr bg-${i} `">
           <img src="~/assets/imges/landing/bg-2.png" alt="" />
         </div>
       </div>
 
       <div class="box-text col-sm-11 col-xl-10 mx-auto p-2 pt-4">
         <div class="text col-md-6 px-xxl-5 ms-xxl-4">
-          <div class="text_ga fw-bolder">
+          <div class="text_ga fw-bolder move-to-left">
             Trade crypto like it's meant to be
           </div>
-          <h1 class="fw-bold text_bd h1">Buy And Sell Digital Currency</h1>
-          <p class="lh-sm text-secondary">
+          <h1 class="fw-bold text_bd h1 move-to-right">Buy And Sell Digital Currency</h1>
+          <p class="lh-sm text-secondary move-to-left">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum
             aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
             sed nulla tristique aenean viverra urna nec. Dapibus nascetur amet
             lacinia et placerat nibh.
           </p>
           <div class="btns d-flex my-4">
-            <div>
+            <div class="move-to-bottom">
               <div
                 class="btn bg_ga text-light rounded px-4 py-2 ms-sm-3 ms-xl-5 bsl"
               >
                 Get Started
               </div>
             </div>
-            <div class="video-btn ms-2 ms-sm-4">
+            <div class="video-btn ms-2 ms-sm-4 move-to-right">
               <div class="btn bg_ga rounded-circle p-1">
                 <b-icon icon="play" class="m-0 text_bd icon"></b-icon>
               </div>
-              <span class="text_bd">intro Video</span>
+              <span class="text_bd fw-500">intro Video</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="d-none d-md-flex lg-bg">
+      <div class="d-none d-md-flex lg-bg ">
         <div class="col-2"></div>
         <div class="box-img col-10 ms-auto">
           <img
@@ -97,9 +97,15 @@
       z-index: 9;
       width: 40px;
       height: 40px;
-      .icon {
-        font-size: 30px !important;
+      transition: all 0.5s;
+
+      &:hover {
+        transform: translateY(-7px) scale(1.1);
+        color: rgb(86, 216, 216);
       }
+    }
+    .icon {
+      font-size: 30px !important;
     }
   }
   .sm-bg {
