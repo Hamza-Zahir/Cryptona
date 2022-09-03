@@ -5,11 +5,11 @@
   >
     <div
       v-for="pecent in Tokens"
-      key="${pecent.id}"
+      :key="pecent.id"
       :class="`Token ${pecent.id}`"
       :style="rotetStyle(Tokens, pecent.id)"
     >
-      <span class="" :style="spanstyle(Tokens, pecent.id)"
+   <span class="" :style="spanstyle(Tokens, pecent.id)"
         >{{ pecent.percentage}}%</span
       >
     </div>

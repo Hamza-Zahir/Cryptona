@@ -52,3 +52,10 @@ export default {
   }
 }
 </script>
+
+
+<style scoped>
+.body-content{
+  overflow: hidden;
+}
+</style>

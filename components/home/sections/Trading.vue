@@ -66,9 +66,8 @@
             </div>
           </div>
         </div>
-        <div class="move-to-bottom">
-
-          <Gradient />
+        <div class="move-to-bottom mt-5">
+     <Graph/>
 
         </div>
       </div>
@@ -76,14 +75,9 @@
   </section>
 </template>
 <script>
-import Gradient from "../../gradientCurve.vue"
+
 export default {
-  components:{
-    Gradient
-  },
-  data() {
-    return {};
-  },
+
 };
 </script>
 <style lang="scss" scoped>

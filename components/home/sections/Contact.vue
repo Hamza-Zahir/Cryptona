@@ -102,7 +102,7 @@
                 placeholder="Type Your Message"
                 class="w-100 bg-none border_bv my-2 p-2"
               ></textarea>
-              <div class="btn px-4 py-2 mt-2 text-light bg_ga">
+              <div class="btn px-4 py-2 mt-2 text-light bg_ga bsl">
                 <span class="h5">Submit Message</span>
                 <img
                   src="~/assets/imges/send-icon.png"
@@ -174,7 +174,7 @@
             </div>
           </div>
           <div class="text-center my-2">
-            <div class="btn bg_ga text-light px-3 py-2 m-3">
+            <div class="btn bg_ga text-light px-3 py-2 m-3 bsl">
               <b-icon icon="geo-alt" class="h5 m-0"></b-icon>
               <span class="h5">View Map</span>
             </div>
